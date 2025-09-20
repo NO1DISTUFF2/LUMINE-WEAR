@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminé Wear | Fashion Redefined</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #2c2c2c;
+      background: #fafafa;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #444;
+      transition: color 0.25s ease;
+    }
+
+    nav a:hover {
+      color: #8b5cf6;
+    }
+
+    /* HERO */
+    .hero {
+      background: url("dress.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* COLLECTIONS */
+    .collections {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .collections h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #111;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 1rem;
+      display: block;
+      text-align: center;
+      padding: 14px;
+      transition: color 0.25s ease;
+    }
+
+    .card a:hover {
+      color: #8b5cf6;
+    }
+
+    /* CONTACT */
+    #contact {
+      max-width: 700px;
+      margin: 100px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      margin-bottom: 22px;
+      color: #111;
+    }
+
+    #contact p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 22px;
+      margin-top: 80px;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Luminé Wear</h1>
+  <nav>
+    <a href="dress.html">Dresses</a>
+    <a href="outfit.html">Outfits</a>
+    <a href="wear.html">Street Wear</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Illuminate Your Style</h2>
+  <p>Discover fashion that blends elegance with modern energy.</p>
+</section>
+
+<section class="collections">
+  <h2>Our Collections</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="dress1.jpg" alt="Exclusive Dresses">
+      <a href="dress.html">Exclusive Dresses</a>
+    </div>
+    <div class="card">
+      <img src="outfit1.jpg" alt="New Outfits">
+      <a href="outfit.html">New Outfits</a>
+    </div>
+    <div class="card">
+      <img src="wear1.jpg" alt="Trending Street Wear">
+      <a href="wear.html">Trending Street Wear</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: hello@luminewear.com</p>
+  <p>Phone: (555) 123-4567</p>
+  <p>Location: 123 Fashion Avenue, New York, NY</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Luminé Wear. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
